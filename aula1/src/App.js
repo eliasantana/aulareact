@@ -5,9 +5,11 @@
    java script que será convertido para código nativo de cada plataforma.
 */
 import React from 'react'
+import { View } from 'react-native'
 import{ Text } from 'react-native'
 import Primeiro from './components/Primeiro'
-import { View } from 'react-native'
+
+import CompPadrao, { Comp1, Comp2 } from './components/Multi'
 // As Functions Expressions são funções anônimas que podem ser  utlizadas para facilidar 
 /*
 //Exemplo de uma function comum
@@ -27,7 +29,10 @@ export default function (){
 // Simplificação de uma ArrowFunction 
 
 export default () => (
-        <View>
+        <View>  
+                <CompPadrao/>
+                <Comp1/>
+                <Comp2/>
                 <Primeiro/>
         </View>
 )
