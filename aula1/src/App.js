@@ -5,10 +5,10 @@
    java script que será convertido para código nativo de cada plataforma.
 */
 import React from 'react'
-import { View } from 'react-native'
+import { View, StyleSheet } from 'react-native'
 import{ Text } from 'react-native'
 import Primeiro from './components/Primeiro'
-
+import Estilo from './components/estilo'
 import CompPadrao, { Comp1, Comp2 } from './components/Multi'
 // As Functions Expressions são funções anônimas que podem ser  utlizadas para facilidar 
 /*
@@ -29,7 +29,7 @@ export default function (){
 // Simplificação de uma ArrowFunction 
 
 export default () => (
-        <View>  
+        <View style={style.App}>  
                 <CompPadrao/>
                 <Comp1/>
                 <Comp2/>
@@ -37,5 +37,12 @@ export default () => (
         </View>
 )
 
+const style = StyleSheet.create({
+    App:{        
+        flexGrow:1,
+        justifyContent:"center",
+        alignItems:"center"
+    } 
+})
 //exemplo
 //export default () => <Text>Primeiro Componente!!!!!</Text>
