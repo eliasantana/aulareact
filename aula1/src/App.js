@@ -10,6 +10,8 @@ import{ Text } from 'react-native'
 import Primeiro from './components/Primeiro'
 import Estilo from './components/estilo'
 import CompPadrao, { Comp1, Comp2 } from './components/Multi'
+import MinMax from './components/MinMax'
+
 // As Functions Expressions são funções anônimas que podem ser  utlizadas para facilidar 
 /*
 //Exemplo de uma function comum
@@ -30,18 +32,22 @@ export default function (){
 
 export default () => (
         <View style={style.App}>  
+                <MinMax min={3} max={20}/>
+                <MinMax min={10} max={24}/>
+                {/*
                 <CompPadrao/>
                 <Comp1/>
                 <Comp2/>
-                <Primeiro/>
+                <Primeiro/> */}
         </View>
 )
 
 const style = StyleSheet.create({
     App:{        
-        flexGrow:1,
+        flexGrow: 1,
         justifyContent:"center",
-        alignItems:"center"
+        alignItems:"center",
+        padding: 20
     } 
 })
 //exemplo
