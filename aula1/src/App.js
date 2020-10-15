@@ -11,6 +11,7 @@ import Primeiro from './components/Primeiro'
 import Estilo from './components/estilo'
 import CompPadrao, { Comp1, Comp2 } from './components/Multi'
 import MinMax from './components/MinMax'
+import Aleatorio from './components/Aleatorio'
 
 // As Functions Expressions são funções anônimas que podem ser  utlizadas para facilidar 
 /*
@@ -32,9 +33,15 @@ export default function (){
 
 export default () => (
         <View style={style.App}>  
+                
+                <Aleatorio min={1} maximo={60}/>
+                <Aleatorio min={1} maximo={60}/>
+                <Aleatorio min={1} maximo={60}/>
+                <Aleatorio min={1} maximo={60}/>
+                <Aleatorio min={1} maximo={60}/>
+                {/*
                 <MinMax min={3} max={20}/>
                 <MinMax min={10} max={24}/>
-                {/*
                 <CompPadrao/>
                 <Comp1/>
                 <Comp2/>
