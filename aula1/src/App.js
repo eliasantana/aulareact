@@ -8,10 +8,11 @@ import React from 'react'
 import { View, StyleSheet } from 'react-native'
 import{ Text } from 'react-native'
 import Titulo from './components/Titulo'
-import Contador from './components/Contador'
+//import Contador from './components/Contador'
+import Pai from './components/indireta/Pai'
 //import Botao from './components/Botao'
 //import Primeiro from './components/Primeiro'
-//import Estilo from './components/estilo'
+import Estilo from './components/estilo'
 //import CompPadrao, { Comp1, Comp2 } from './components/Multi'
 //import MinMax from './components/MinMax'
 //import Aleatorio from './components/Aleatorio'
@@ -37,10 +38,11 @@ export default function (){
 export default () => (
         <View style={style.App}>  
 
-               <Contador inicial={100} passo={13}></Contador> 
-               <Contador></Contador>
+                <Pai style={Estilo.fontG}/>
                 {/*
                 <Botao/>
+               <Contador inicial={100} passo={13}></Contador> 
+               <Contador></Contador>
                 <Titulo principal="Cadastro"
                         segundario="Tela de Cadastro de Produto "/>
                 <Aleatorio min={1} maximo={60}/>
